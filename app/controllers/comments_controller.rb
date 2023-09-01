@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
         if comment.save
           redirect_to prototype_path(comment.prototype)
         else
-          render prototype_path(prototype.id)
+          render 'prototypes/show'
         end
     end
 
