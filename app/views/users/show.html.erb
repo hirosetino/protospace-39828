@@ -28,9 +28,7 @@
         <%= "#{@user.name}さんのプロトタイプ"%>
       </h2>
       <div class="user__card">
-        <% @prototypes.each do |prototype| %>
-          <%= render "prototypes/prototype", prototype: prototype %>
-        <% end %>
+        <%= render partial: 'prototypes/prototype', collection: @prototypes %>
       </div>
     </div>
   </div>
